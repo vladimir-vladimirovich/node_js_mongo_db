@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add user</title>
+</head>
+<body>
+
+<form action="/create" method="post">
+    <h3>Create new entry</h3>
+    <div>
+        <input type="text" placeholder="username" name="username">
+    </div>
+    <div>
+        <input type="text" placeholder="password" name="password">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<form action="/delete" method="post">
+    <h3>Delete existing entry</h3>
+    <div>
+        <input type="text" placeholder="username" name="username">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<form action="/update" method="post">
+    <h3>Update existing entry</h3>
+    <div>
+        <input type="text" placeholder="oldusername" name="oldusername">
+    </div>
+    <div>
+        <input type="text" placeholder="newusername" name="newusername">
+    </div>
+    <div>
+        <input type="text" placeholder="newpassword" name="newpassword">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<form action="/read" method="post">
+    <h3>READ</h3>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+    <textarea name="logArea"></textarea>
+</form>
+
+</body>
+
+</html>
